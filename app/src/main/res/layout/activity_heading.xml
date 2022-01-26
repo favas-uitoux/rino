@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:background="@color/black">
+
+    <TextView
+
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:text="@string/dat"
+        android:gravity="center_horizontal|bottom"
+        android:fontFamily="@font/montserrat_bold"
+
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/itemName"
+        />
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/qty"
+
+        />
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/buyPrice"
+
+        />
+
+    <TextView
+
+        android:layout_width="100dp"
+
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/selPrice"
+
+        />
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/total"
+
+        />
+
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/balance"
+
+        />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        />
+</LinearLayout>

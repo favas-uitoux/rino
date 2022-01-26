@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <HorizontalScrollView
+        android:id="@+id/hs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cns1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card0"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:hint="@string/dat"
+                        android:focusable="false"
+
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@+id/card0"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtName"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/montserrat_bold"
+
+                        android:gravity="center_horizontal"
+
+                        android:hint="@string/itemName"
+
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@+id/card1"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                   >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:hint="@string/qty"
+                        android:maxLength="4"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@+id/card2"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtBuyPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:hint="@string/buyPrice"
+                        android:maxLength="4"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@+id/card3"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSelPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/selPrice"
+
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/card4"
+                app:layout_constraintTop_toTopOf="@id/card4"
+                app:layout_constraintBottom_toBottomOf="@id/card4"
+
+                android:text="@string/save"
+                />
+
+
+            <include
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/activity_heading"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card0"
+                android:layout_marginTop="20dp"
+
+                />
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heading"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rect_border"
+
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recv1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

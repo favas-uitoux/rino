@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+      android:enabled="false"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/edtItem"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/edtQty"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edtBuyPrice"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/edtSellPrice"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/edtTotal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/edtBal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:textColor="@color/black"
+        />
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/delete"/>
+
+
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/edit"/>
+</LinearLayout>

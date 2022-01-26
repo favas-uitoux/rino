@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bot_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/daybook" />
+
+  
+
+    <item
+        android:id="@+id/bot_report"
+        android:icon="@drawable/ic_cat"
+        android:title="@string/ledger" />
+
+
+    <item
+        android:id="@+id/bot_portfolio"
+        android:icon="@drawable/ic_cat"
+        android:title="@string/portfolio" />
+
+
+    <item
+        android:id="@+id/bot_pur_sale"
+        android:icon="@drawable/ic_cat"
+        android:title="@string/pur_sale" />
+
+    <item
+        android:id="@+id/bot_dep_draw"
+        android:icon="@drawable/ic_cat"
+        android:title="@string/depWith" />
+
+
+
+
+
+</menu>
