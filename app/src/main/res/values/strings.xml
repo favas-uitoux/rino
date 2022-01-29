@@ -42,4 +42,6 @@
     <string name="depWith">Dep/Draw</string>
     <string name="enter_price">Enter Price</string>
     <string name="remarks">Remarks</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
 </resources>

@@ -73,4 +73,18 @@ class Repo1(private val stockEntiityDao: StockEntityDao) {
         return stockEntiityDao.readSale()
     }
 
+    fun  readToatalDeposit(): Float
+    {
+        return stockEntiityDao.readTotalDeposit()
+    }
+    fun  readTotalDraw(): Float
+    {
+        return stockEntiityDao.readTotalDraw()
+    }
+
+    fun  readSer(ser:String): MutableList<StockEntiity>
+    {
+        return stockEntiityDao.readSearch(ser)
+    }
+
 }

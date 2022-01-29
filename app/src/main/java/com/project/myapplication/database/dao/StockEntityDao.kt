@@ -43,6 +43,12 @@ interface StockEntityDao {
     @Query("Select * from stockentiity where itemName = 'Deposit'   order by itemName asc")
     fun readDeposit(): LiveData<MutableList<StockEntiity>>
 
+    @Query("Select sum(buyPrice) from stockentiity where itemName = 'Deposit'   ")
+    fun readTotalDeposit(): Float
+
+    @Query("Select sum(buyPrice) from stockentiity where itemName = 'Draw'   ")
+    fun readTotalDraw(): Float
+
     @Query("Select * from stockentiity where itemName ='Draw'  order by itemName asc")
     fun readDraw(): LiveData<MutableList<StockEntiity>>
 
@@ -51,4 +57,7 @@ interface StockEntityDao {
 
     @Query("Select * from stockentiity where itemName !='Deposit' and itemName !='Draw' and SellingPrice>0 order by itemName asc")
     fun readSale(): LiveData<MutableList<StockEntiity>>
+
+    @Query("Select * from stockentiity where itemName like :ser or remarks like:ser  ")
+    fun readSearch(ser:String): MutableList<StockEntiity>
 }

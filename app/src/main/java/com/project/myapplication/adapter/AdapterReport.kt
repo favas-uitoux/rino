@@ -37,23 +37,12 @@ class AdapterReport(private val context: Context, private val list: MutableList<
         holder.txtName.setText(context.getString(R.string.itemName) + ": " + cpr.name)
 
 
-//        if(cpr.type==0)
-//        {
         holder.txtTotBuyQty.setText("Buy Qty: " + cpr.totBuyQty.toString())
         holder.txtBuyAvg.setText("Avg: " + cpr.buyAvg.toString())
         holder.txtTotSellQty.setText("Sell Qty: " + cpr.totSellQty.toString())
         holder.txtSellAvg.setText("Avg: " + cpr.sellAvg.toString())
 
-        //       }
 
-//        else
-//        {
-//            holder.txtTotBuyQty.setText("Buy Qty: ")
-//            holder.txtBuyAvg.setText("Avg: ")
-//            holder.txtTotSellQty.setText("Sell Qty: "+cpr.totQty.toString())
-//            holder.txtSellAvg.setText("Avg: "+cpr.avgPrice.toString())
-//
-//        }
 
 
     }

@@ -50,4 +50,19 @@ class ReportViewModel(application: Application) :AndroidViewModel(application) {
         return repo. readSale()
     }
 
+    fun  readToatalDeposit(): Float
+    {
+        return repo.readToatalDeposit()
+    }
+
+    fun  readTotalDraw(): Float
+    {
+        return repo.readTotalDraw()
+    }
+
+    fun  readSer(ser:String): MutableList<StockEntiity>
+    {
+        return repo.readSer(ser)
+    }
+
 }
